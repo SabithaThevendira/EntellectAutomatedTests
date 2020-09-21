@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2eb14804-dc0e-4710-a60d-1b4bfdb1f215" activeEnvironment="Default" name="REST Project 1" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="Entellect.Api.Tests.SoapUi"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="64c85af2-aa3c-4e6a-a9c8-458e49f2ec6a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api-ssl.bitly.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api-ssl.bitly.com</con:endpoint></con:endpoints><con:resource name="Bitlinks" path="/v4/bitlinks" id="7a539e6e-0f49-41a8-99ea-599135d63706"><con:settings/><con:parameters/><con:method name="Bitlinks 1" id="1987fdf4-7c27-4619-b62a-ccfb482355a4" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403 422</con:status><con:params/><con:element xmlns:bit="https://api-ssl.bitly.com/v4/bitlinks">bit:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>201 200</con:status><con:params/><con:element xmlns:bit="https://api-ssl.bitly.com/v4/bitlinks">bit:Response</con:element></con:representation><con:request name="Request 1" id="0bf5335a-7179-49e5-9e68-74f45a3431bd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request>{
+  "long_url": "https://www.bbc.co.uk/",
+  "domain": "bit.ly",
+  "group_guid": "Bk9lbLQPzny",
+  "title": "BBC Tests"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d8843cf6-221d-447e-b0c5-f04c302401df" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api-ssl.bitly.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api-ssl.bitly.com</con:endpoint></con:endpoints><con:resource name="Bk9kjAREvec" path="/v4/groups/Bk9kjAREvec" id="f3ceea21-c35c-46f1-8b00-054522af760a"><con:settings/><con:parameters/><con:method name="Bk9kjAREvec 1" id="49e864f6-e2c2-4bd9-a276-7899f6d4e3d6" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>406 403</con:status><con:params/><con:element xmlns:bk9="https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec">bk9:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>applicaiton/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:bk9="https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec">bk9:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="b9f820bf-3f66-4f6f-a585-4efaee3c0545" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 483682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="applicaiton/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="db53e49e-18f3-419f-944b-5c65ac1fdbf3" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api-ssl.bitly.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api-ssl.bitly.com</con:endpoint></con:endpoints><con:resource name="Clicks" path="/v4/groups/Bk9kjAREvec/bitlinks/clicks" id="850c4512-5857-441b-81ad-76e9bbad2447"><con:settings/><con:parameters/><con:method name="Clicks 1" id="08c6d0fc-78d5-4085-80c6-485c98548e9a" method="GET"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:clic="https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec/bitlinks/clicks">clic:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:clic="https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec/bitlinks/clicks">clic:Fault</con:element></con:representation><con:request name="Request 1" id="2c0399e0-1086-47a2-9f2b-b16b9efaea70" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 483682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="f83d3e4d-fc43-4539-8398-a03b3bc79373" name="Entellect.Api.Tests.SoapUi"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="acd7e47e-1d91-4a79-b259-531d082f026b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PositiveScenario" searchProperties="true"><con:description>#Post Bitlinks
+Given User is creating the link for a group 
+when Group ids created
+Then Verify the  end of the group created
+
+#Retrieve a Group
+Given a group id is created by user
+When groupid is provided
+Then verify the group using group id from the link
+
+#Retrieve a Group by Sort using Clicks
+Given user navigated to different sites
+When user clicking on the urls
+Then capture the click event 
+And Sort it using clicks performed by user
+</con:description><con:settings/><con:testStep type="restrequest" name="Post Bitlinks" id="fc1fb129-d118-4ec0-8a11-59891909aeeb"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/bitlinks" methodName="Bitlinks 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Post Bitlinks" id="0bf5335a-7179-49e5-9e68-74f45a3431bd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 483682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request>{
+  "long_url": "https://www.bbc.co.uk/",
+  "domain": "bit.ly",
+  "group_guid": "Bk9kjAREvec",
+  "title": "BBC Tests"
+}</con:request><con:originalUri>https://api-ssl.bitly.com/v4/bitlinks</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="dd4eb3c0-2f33-4297-a242-b7a28b2d6161" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Retrieve a Group" id="f8827f5b-de02-4f4d-b28d-d55df411a0d7"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/groups/Bk9kjAREvec" methodName="Bk9kjAREvec 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Retrive a Group" id="b9f820bf-3f66-4f6f-a585-4efaee3c0545" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 483682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:originalUri>https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="11694dde-49a0-429c-b65c-9b80e36393cb" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Retrieve a Group by Sort using Clicks" id="c69c4680-e10e-46dc-8e30-1174ecff2e5f"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/groups/Bk9kjAREvec/bitlinks/clicks" methodName="Clicks 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Retrive a Group by Sort using Clicks" id="2c0399e0-1086-47a2-9f2b-b16b9efaea70" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 483682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:originalUri>https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec/bitlinks/clicks</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="91999f30-3b11-4a97-8a11-48b91ec7e811" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f4593600-8965-4730-a259-9e2346eb03cf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="NegativeScenario" searchProperties="true"><con:description>#Post Bitlinks
+Given user creating the link for a group 
+when Group ids created with Empty string
+Then verify the end point is rejecting the group creation by showing message ‘UNPROCESSABLE_ENTITY’
+
+#Retrive a Group
+Given a group id is created with wrong Bearer Token
+When wrong groupid is provided
+Then validate unauthorized user 
+
+#Retrive a Group by Sort using Clicks
+Given user navigated to different sites using wrong Bearer Token
+And Wring Content-Type
+When user clicking on the urls
+Then capture the click event 
+And validate the Sort is not happening for the given user.</con:description><con:settings/><con:testStep type="restrequest" name="Post Bitlinks" id="32ea2584-fd79-4675-a21b-e8c939c52b14"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/bitlinks" methodName="Bitlinks 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Post Bitlinks" id="0bf5335a-7179-49e5-9e68-74f45a3431bd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer de0b9e3c795c3858c0e6d37708ecdafb8c754451"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:originalUri>https://api-ssl.bitly.com/v4/bitlinks</con:originalUri><con:assertion type="Simple Contains" id="1ac51fdd-9097-45a0-9b95-97c68266adc8" name="Contains"><con:configuration><token>"UNPROCESSABLE_ENTITY"</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Retrieve a Group" id="5423a076-ad95-4be4-a18f-e2a4cf2a5e0b"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/groups/Bk9kjAREvec" methodName="Bk9kjAREvec 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Retrive a Group" id="b9f820bf-3f66-4f6f-a585-4efaee3c0545" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 48682e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="appliction/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:originalUri>https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="11694dde-49a0-429c-b65c-9b80e36393cb" name="Valid HTTP Status Codes"><con:configuration><codes>406</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Retreive a Group by Sort using Clicks" id="da02064b-3e3d-4c3a-a9f3-a5556bb41549"><con:settings/><con:config service="https://api-ssl.bitly.com" resourcePath="/v4/groups/Bk9kjAREvec/bitlinks/clicks" methodName="Clicks 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Retrive a Group by Sort using Clicks" id="2c0399e0-1086-47a2-9f2b-b16b9efaea70" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Bearer 48382e3418cbc326589c5acd1da34f09f10ac8e"/>
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://api-ssl.bitly.com</con:endpoint><con:request/><con:originalUri>https://api-ssl.bitly.com/v4/groups/Bk9kjAREvec/bitlinks/clicks</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="91999f30-3b11-4a97-8a11-48b91ec7e811" name="Valid HTTP Status Codes"><con:configuration><codes>403</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
